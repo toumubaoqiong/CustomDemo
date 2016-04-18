@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vince.demo.customdemo">
+    package="com.vince.demo.customdemo" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".demo_aidl.AidlActivity"
-            android:label="@string/title_activity_aidl">
-
+            android:label="@string/title_activity_aidl" >
         </activity>
 
         <service
-            android:name="com.vince.demo.customdemo.demo_aidl.ControlMusicService"
-            android:process=":remote">
+            android:name=".demo_aidl.ControlMusicService"
+            android:process=":remote" >
             <intent-filter>
+
                 <!-- AIDL完整路径名。必须指明，客户端能够通过AIDL类名查找到它的实现类 -->
                 <action android:name="com.vince.demo.customdemo.demo_aidl.ControlMusicService" />
             </intent-filter>
         </service>
 
+        <activity android:name=".marqueeTextView.MarqueeTextViewActivity" >
+        </activity>
         <activity
-            android:name=".marqueeTextView.MarqueeTextViewActivity">
+            android:name=".loading.LoadingActivity"
+            android:label="@string/title_activity_loading" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
