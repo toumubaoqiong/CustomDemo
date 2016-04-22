@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="110dp"
+    android:background="@mipmap/bg_dialog" >
+     
+    <!-- android:background="@android:color/transparent" -->
+
+
+         <ProgressBar
+            android:id="@+id/wait_loading_bar"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="55dp"
+            android:indeterminateDrawable="@drawable/loading_test"
+			android:indeterminateOnly="true"
+			android:indeterminateBehavior="repeat"/>
+        
+        <TextView
+            android:id="@+id/wait_hint_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/wait_loading_bar"
+            android:text="正在加载..."
+            android:textColor="#585858"
+            android:textSize="20sp" />
+            
+       
+</RelativeLayout>
+
