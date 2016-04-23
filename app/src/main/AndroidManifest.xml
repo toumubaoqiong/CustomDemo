@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vince.demo.customdemo" >
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -35,6 +34,11 @@
         <activity
             android:name=".net_set.NetworkSettingActivity"
             android:label="@string/title_activity_network_setting" >
+
+        </activity>
+        <activity
+            android:name=".acquisition_configuration.AcquisitionConfiguration"
+            android:label="@string/title_activity_acquisition_configuration" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

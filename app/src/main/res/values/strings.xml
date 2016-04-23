@@ -6,4 +6,5 @@
     <string name="title_activity_aidl">AidlActivity</string>
     <string name="title_activity_loading">LoadingActivity</string>
     <string name="title_activity_network_setting">NetworkSettingActivity</string>
+    <string name="title_activity_acquisition_configuration">AcquisitionConfiguration</string>
 </resources>
