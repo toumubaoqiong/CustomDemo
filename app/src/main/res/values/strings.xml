@@ -7,4 +7,5 @@
     <string name="title_activity_loading">LoadingActivity</string>
     <string name="title_activity_network_setting">NetworkSettingActivity</string>
     <string name="title_activity_acquisition_configuration">AcquisitionConfiguration</string>
+    <string name="title_activity_tooltip">TooltipActivity</string>
 </resources>
