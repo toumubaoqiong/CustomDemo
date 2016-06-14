@@ -1,8 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+
+
+    <style name="AppTheme_Activity" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Default.NoTitleBar" parent="@style/AppTheme_Activity">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="RadioBtn">
+        <item name="android:drawableLeft">@drawable/search_radio</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
 </resources>

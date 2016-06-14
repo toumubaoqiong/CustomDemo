@@ -8,4 +8,15 @@
     <string name="title_activity_network_setting">NetworkSettingActivity</string>
     <string name="title_activity_acquisition_configuration">AcquisitionConfiguration</string>
     <string name="title_activity_tooltip">TooltipActivity</string>
+
+    <!--答题界面-->
+    <string name="title">1+1=?</string>
+    <string name="optionA_one">A.2</string>
+    <string name="optionB_one">B.3</string>
+    <string name="optionC_one">C.4</string>
+    <string name="optionD_one">D.5</string>
+    <string name="optionA_two">A</string>
+    <string name="optionB_two">B</string>
+    <string name="optionC_two">C</string>
+    <string name="optionD_two">D</string>
 </resources>

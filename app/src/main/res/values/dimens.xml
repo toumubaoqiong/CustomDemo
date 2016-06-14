@@ -2,4 +2,15 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--自定义字体大小-->
+    <dimen name="ct_44sp">44sp</dimen>
+    <dimen name="ct_33sp">33sp</dimen>
+    <dimen name="ct_22sp">22sp</dimen>
+
+    <!--答题界面-->
+    <dimen name="margin_title">20dp</dimen>
+    <dimen name="margin_layout_left">50dp</dimen>
+    <dimen name="table_hight">48dp</dimen>
 </resources>
