@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--  This layout does not use <merge/> to slow down the drawing -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.vince.demo.customdemo.window_background.FpsImageView
+        android:id="@+id/FpsImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="center"
+        android:src="@mipmap/background" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="12dip"
+        android:background="#90000000"
+        android:padding="12dip"
+        android:text="Antelope Canyon"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</FrameLayout>

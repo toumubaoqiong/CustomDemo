@@ -28,6 +28,17 @@
         <activity
             android:name=".loading.LoadingActivity"
             android:label="@string/title_activity_loading"/>
+
+
+        <activity
+            android:name=".loading.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            </activity>
         <activity
             android:name=".net_set.NetworkSettingActivity"
             android:label="@string/title_activity_network_setting"/>
@@ -41,11 +52,7 @@
 
         </activity>
         <activity android:name=".radiogroup.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 
