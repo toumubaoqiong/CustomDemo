@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="yellow">#ff9940</color>
+
+    <drawable name="clr_normal">#1B8257</drawable>
+    <drawable name="clr_pressed">#1B8230</drawable>
 </resources>

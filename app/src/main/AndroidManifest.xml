@@ -33,8 +33,10 @@
         <activity android:name=".marqueeTextView.MarqueeTextViewActivity" />
         <activity
             android:name=".loading.LoadingActivity"
-            android:label="@string/title_activity_loading" />
-        <activity android:name=".loading.MainActivity"></activity>
+            android:label="@string/title_activity_loading" >
+
+        </activity>
+        <activity android:name=".loading.MainActivity" />
         <activity
             android:name=".net_set.NetworkSettingActivity"
             android:label="@string/title_activity_network_setting" />
@@ -45,9 +47,14 @@
             android:name=".tooltip.TooltipActivity"
             android:label="@string/title_activity_tooltip" />
         <activity android:name=".radiogroup.MainActivity" />
-        <activity android:name=".webview_html.WebViewActivity">
+        <activity android:name=".webview_html.WebViewActivity" />
+        <activity android:name=".crash_handler.CrashReportActivity" />
+        <activity android:name=".version_update.VersionUpdateActivity">
+
         </activity>
-        <activity android:name=".crash_handler.CrashReportActivity">
+        <activity android:name=".login.LoginActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
