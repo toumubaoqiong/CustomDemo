@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <!-- 在SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".crash_handler.MyApplication"
@@ -33,9 +35,7 @@
         <activity android:name=".marqueeTextView.MarqueeTextViewActivity" />
         <activity
             android:name=".loading.LoadingActivity"
-            android:label="@string/title_activity_loading" >
-
-        </activity>
+            android:label="@string/title_activity_loading" />
         <activity android:name=".loading.MainActivity" />
         <activity
             android:name=".net_set.NetworkSettingActivity"
@@ -49,12 +49,21 @@
         <activity android:name=".radiogroup.MainActivity" />
         <activity android:name=".webview_html.WebViewActivity" />
         <activity android:name=".crash_handler.CrashReportActivity" />
-        <activity android:name=".version_update.VersionUpdateActivity">
+        <activity android:name=".version_update.VersionUpdateActivity" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".http.activity.GetAPictureFromInternetActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".http.activity.WebCodeViewerActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".http.activity.GetXMLActivity">
 
         </activity>
-        <activity android:name=".login.LoginActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:screenOrientation="landscape">
+        <activity android:name=".http.activity.UploadUserInfoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
