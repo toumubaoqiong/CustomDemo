@@ -59,11 +59,12 @@
             android:label="@string/app_name" />
         <activity
             android:name=".http.activity.WebCodeViewerActivity"
-            android:label="@string/app_name"></activity>
-        <activity android:name=".http.activity.GetXMLActivity">
-
-        </activity>
-        <activity android:name=".http.activity.UploadUserInfoActivity">
+            android:label="@string/app_name" />
+        <activity android:name=".http.activity.GetXMLActivity" />
+        <activity android:name=".http.activity.UploadUserInfoActivity"></activity>
+        <activity android:name=".viewfipper.ViewFlipperActivity"></activity>
+        <activity android:name=".viewpager.ViewPagerActivity"></activity>
+        <activity android:name=".viewpager.ViewPagerOthersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
