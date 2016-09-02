@@ -21,6 +21,7 @@ public class MyLoadingView extends RelativeLayout {
 	public MyLoadingView(Context context) {
 		super(context);
 		init(context);
+
 	}
 
 	public MyLoadingView(Context context, AttributeSet attrs){

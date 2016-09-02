@@ -20,6 +20,7 @@ public class AidlActivity extends Activity {
 
     private IMusicControlService iMusicControlService;
 
+
     private final ServiceConnection serviceConnection=new ServiceConnection()
     {
 

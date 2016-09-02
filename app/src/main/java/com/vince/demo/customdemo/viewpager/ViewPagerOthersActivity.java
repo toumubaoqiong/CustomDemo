@@ -21,6 +21,10 @@ public class ViewPagerOthersActivity extends Activity implements ViewPager.OnPag
     private ViewPager mViewPager;
     private MyPagerAdapterOthers mMyPagerAdapterOthers;
     private List<View> mListView;
+    //标记是否进行了切换
+    private boolean mIsChanged = false;
+    //当前的显示界面
+    private int mCurrentPagePosition = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,16 +71,23 @@ public class ViewPagerOthersActivity extends Activity implements ViewPager.OnPag
 
     @Override
     public void onPageSelected(int position) {
-
-        if(position == 0){
-            mViewPager.setCurrentItem(mListView.size() - 1,false);
-        }else if(position == mListView.size() - 1){
-            mViewPager.setCurrentItem(0,false);
+        mIsChanged = true;
+        if (position > mListView.size() - 2) {
+            mCurrentPagePosition = 1;
+        } else if (position < 1) {
+            mCurrentPagePosition = mListView.size() - 2;
+        } else {
+            mCurrentPagePosition = position;
         }
     }
 
     @Override
     public void onPageScrollStateChanged(int state) {
-
+        if (ViewPager.SCROLL_STATE_IDLE == state) {
+            if (mIsChanged) {
+                mIsChanged = false;
+                mViewPager.setCurrentItem(mCurrentPagePosition, false);
+            }
+        }
     }
 }
