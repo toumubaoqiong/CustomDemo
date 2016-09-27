@@ -12,7 +12,8 @@
     <!-- 访问internet权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 访问Camera权限 -->
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
 
     <application
@@ -68,8 +69,10 @@
         <activity android:name=".http.activity.UploadUserInfoActivity" />
         <activity android:name=".viewfipper.ViewFlipperActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
-        <activity android:name=".viewpager.ViewPagerOthersActivity"></activity>
+        <activity android:name=".viewpager.ViewPagerOthersActivity" />
         <activity android:name=".textureview.TextureViewActivity">
+        </activity>
+        <activity android:name=".controls.ExpandTextViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

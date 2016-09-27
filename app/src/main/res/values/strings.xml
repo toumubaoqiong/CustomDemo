@@ -32,4 +32,13 @@
     <string name="button_http">save</string>
     <string name="success">Succeeded to save</string>
     <string name="fail">failed to save</string>
+
+    <!--
+        其中%后面是占位符的位置，从1开始，
+        $ 后面是填充数据的类型
+         %d：表示整数型；
+         %f ：表示浮点型，其中f前面的.2表示小数的位数
+         %c：表示字符串
+     -->
+    <string name="data">整数型:%1$d，浮点型：%2$.2f，字符串:%3$s</string>
 </resources>
