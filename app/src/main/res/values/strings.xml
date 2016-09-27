@@ -41,4 +41,5 @@
          %c：表示字符串
      -->
     <string name="data">整数型:%1$d，浮点型：%2$.2f，字符串:%3$s</string>
+    <string name="tip">装不了了</string>
 </resources>
