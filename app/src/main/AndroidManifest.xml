@@ -70,10 +70,10 @@
         <activity android:name=".viewfipper.ViewFlipperActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".viewpager.ViewPagerOthersActivity" />
-        <activity android:name=".textureview.TextureViewActivity"></activity>
-        <activity android:name=".controls.ExpandTextViewActivity">
-        </activity>
-        <activity android:name=".controls.ExpandEditTextActivity">
+        <activity android:name=".textureview.TextureViewActivity" />
+        <activity android:name=".controls.ExpandTextViewActivity"></activity>
+        <activity android:name=".controls.ExpandEditTextActivity"></activity>
+        <activity android:name=".custom_videoview.CustomVideoViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
