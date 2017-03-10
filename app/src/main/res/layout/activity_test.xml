@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vince.demo.customdemo.webview_html.banner.CustomWebView
+        android:id="@+id/my_plan_banner_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:background="@android:color/transparent"
+        android:layerType="software"
+        android:scrollbars="none" />
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WebView_test"/>
+
+
+</RelativeLayout>

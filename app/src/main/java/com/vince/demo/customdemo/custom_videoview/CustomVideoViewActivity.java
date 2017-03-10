@@ -1,8 +1,7 @@
 package com.vince.demo.customdemo.custom_videoview;
 
 import android.app.Activity;
-import android.media.MediaPlayer;
-import android.net.Uri;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,7 +33,7 @@ public class CustomVideoViewActivity extends Activity implements View.OnClickLis
         btn_start = (Button) findViewById(R.id.btn_start);
         btn_start.setOnClickListener(this);
 
-        videoview = (CustomVideoView) findViewById(R.id.videoview);
+       /* videoview = (CustomVideoView) findViewById(R.id.videoview);
         //设置播放加载路径
         videoview.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.media));
         //播放
@@ -45,15 +44,29 @@ public class CustomVideoViewActivity extends Activity implements View.OnClickLis
             public void onCompletion(MediaPlayer mediaPlayer) {
                 videoview.start();
             }
-        });
+        });*/
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btn_start:
+                pauseMusic();
+
                 Toast.makeText(this,"进入了主页",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
+
+    private void pauseMusic() {
+        /*Intent freshIntent = new Intent();
+        freshIntent.setAction("com.android.music.musicservicecommand.pause");
+        freshIntent.putExtra("command", "pause");
+        sendBroadcast(freshIntent);*/
+
+         AudioManager audioManager = ( AudioManager)getSystemService( Activity.AUDIO_SERVICE );
+         audioManager.requestAudioFocus( null, AudioManager.STREAM_MUSIC,
+         AudioManager.AUDIOFOCUS_GAIN );
+    }
+
 }

@@ -36,6 +36,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/httpmime-4.2.4.jar')
     compile 'com.android.support:support-v4:23.4.0'
+    compile files('src/main/libs/webview-1.0.2.jar')
 }
 
 task ndkBuild(type: Exec) {
