@@ -30,13 +30,17 @@ public class SkipOtherActivity extends Activity {
      * @param v
      */
     public void onClick(View v){
-        Intent intent = new Intent();
+        //通过包名、类名启动
+       /* Intent intent = new Intent();
         intent.putExtra(FROMMODEL,"com.eebbk.getkey");
         intent.putExtra(GRADE,"八年级");
         intent.putExtra(TYPE,"名师视频精讲");
         intent.setComponent(new ComponentName("com.eebbk.share.android","com.eebbk.share.android.welcome.WelcomeActivity"));
-        startActivity(intent);
+        startActivity(intent);*/
 
+        //通过Action启动
+        Intent intent = new Intent("com.eebbk.share.android.welcome");
+        startActivity(intent);
 
         Toast.makeText(this,"onClick",Toast.LENGTH_LONG).show();
     }
