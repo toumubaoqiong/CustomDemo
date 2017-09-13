@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--
+android:top="50dp";表示该item上边以ImageView上边界往里面缩了50dp
+android:bottom="50dp"表示该item下边以ImageView下边界往里面缩了50dp
+android:left="50dp";表示该item左边以ImageView左边界往里面缩了50dp
+android:right="50dp";表示该item右边以ImageView右边界往里面缩了50dp
+android:bottom="25dp" android:top="25dp" android:left="25dp" android:right="25dp"类似
+-->
+    <item >
+        <shape android:shape="rectangle" >
+            <solid android:color="#0000ff"/>
+        </shape>
+    </item>
+
+    <item android:bottom="25dp" android:top="25dp" android:left="25dp" android:right="25dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#00ff00" />
+        </shape>
+    </item>
+
+    <item android:bottom="50dp" android:top="50dp" android:left="50dp" android:right="50dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="#ff0000" />
+        </shape>
+    </item>
+</layer-list>

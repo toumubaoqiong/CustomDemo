@@ -5,16 +5,16 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.webkit.JavascriptInterface;
-import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.vince.demo.customdemo.R;
+
 import java.io.InputStream;
 
 public class WebViewActivity extends Activity {
 
-    private WebView Wv;
+    private BaseWebView Wv;
     private TextView myTextView;
     final Handler myHandler = new Handler();
 
@@ -23,7 +23,7 @@ public class WebViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
 
-        Wv = (WebView) findViewById(R.id.webView1);
+        Wv = (BaseWebView) findViewById(R.id.webView1);
         myTextView = (TextView) findViewById(R.id.textView1);
         final JavaScriptInterface myJavaScriptInterface
                 = new JavaScriptInterface(this);
@@ -32,7 +32,7 @@ public class WebViewActivity extends Activity {
         Wv.getSettings().setUseWideViewPort(true);//设置此属性，可任意比例缩放
 
         Wv.addJavascriptInterface(myJavaScriptInterface, "AndroidFunction");
-        String html = getFromAssets(this, "index.html");
+        String html = getFromAssets(this, "index2.html");
         Wv.loadDataWithBaseURL( "file:///android_asset/",html, "text/html",
                 "utf-8", null );
     }

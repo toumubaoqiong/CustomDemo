@@ -10,6 +10,16 @@ public class MyApplication extends Application {
 
     private static final String TAG = MyApplication.class.getSimpleName();
 
+    private  String mContent;
+
+    public String getContent() {
+        return mContent;
+    }
+
+    public void setContent(String content) {
+        mContent = content;
+    }
+
     public MyApplication() {
     }
 

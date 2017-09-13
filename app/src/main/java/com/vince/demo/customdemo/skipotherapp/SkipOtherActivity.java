@@ -1,7 +1,6 @@
 package com.vince.demo.customdemo.skipotherapp;
 
 import android.app.Activity;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +38,10 @@ public class SkipOtherActivity extends Activity {
         startActivity(intent);*/
 
         //通过Action启动
-        Intent intent = new Intent("com.eebbk.share.android.welcome");
+        Intent intent = new Intent("com.eebbk.share.android.course.detail");
+
+        intent.putExtra("intent_course_package_putawaytime","1471449600000");
+        intent.putExtra("intent_course_package_id","1562");
         startActivity(intent);
 
         Toast.makeText(this,"onClick",Toast.LENGTH_LONG).show();

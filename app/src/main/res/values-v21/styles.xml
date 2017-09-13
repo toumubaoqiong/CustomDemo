@@ -2,4 +2,17 @@
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light">
     </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppThemeEx" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:buttonStyle">@style/BBKButton</item>
+        <item name="android:seekBarStyle">@style/BBKSeekBar</item>
+    </style>
+
+    <style name="BBKButton" parent="android:Widget.Button"></style>
+
+    <style name="BBKSeekBar" parent="android:Widget.SeekBar"></style>
 </resources>
