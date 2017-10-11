@@ -166,6 +166,9 @@
         <activity android:name=".circlarLayout.CircularLayoutActivity">
         </activity>
         <activity android:name=".xfermode.XfermodeActivity">
+
+        </activity>
+        <activity android:name=".frmeanimation.FrameAnimationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
