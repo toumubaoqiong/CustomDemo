@@ -1,20 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 28
     buildToolsVersion "23.0.2"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.vince.demo.customdemo"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 19
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        /*ndk{
-            moduleName "jnidemo"			//生成的so名字
-            ldLibs "log", "z", "m"
-            abiFilters "armeabi", "armeabi-v7a", "x86"	//输出指定三种abi体系结构下的so库。目前可有可无。
-        }*/
+//        ndk{
+//            moduleName "jnidemo"			//生成的so名字
+//            ldLibs "log", "z", "m"
+//            abiFilters "armeabi", "armeabi-v7a", "x86"	//输出指定三种abi体系结构下的so库。目前可有可无。
+//        }
     }
     buildTypes {
         release {
@@ -25,24 +26,29 @@ android {
 
     sourceSets {
         main {
-            jni.srcDirs = []   //屏蔽gradle的jni生成过程
-            jniLibs.srcDir 'src/main/libs'
+//            jni.srcDirs = []   //屏蔽gradle的jni生成过程
+//            jniLibs.srcDir 'src/main/libs'
             aidl.srcDirs = ['src/main/java']
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/httpmime-4.2.4.jar')
-    compile 'com.android.support:support-v4:23.4.0'
-    compile files('src/main/libs/webview-1.0.2.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/httpmime-4.2.4.jar')
+    implementation files('src/main/libs/webview-1.0.2.jar')
+    implementation 'com.android.support:appcompat-v7:28+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
 
-task ndkBuild(type: Exec) {
-    commandLine 'ndk-build.cmd', '-C', file('src/main/jni').absolutePath
-}
-tasks.withType(JavaCompile) {
-    compileTask -> compileTask.dependsOn ndkBuild
-}
+//task ndkBuild(type: Exec) {
+//    commandLine 'ndk-build.cmd', '-C', file('src/main/jni').absolutePath
+//}
+//tasks.withType(JavaCompile) {
+//    compileTask -> compileTask.dependsOn ndkBuild
+//}
 
