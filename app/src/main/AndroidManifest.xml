@@ -11,6 +11,10 @@
         android:theme="@style/AppThemeEx">
         <activity android:name=".svg.SvgActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".jni.JniTestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -82,13 +86,7 @@
             </intent-filter>
         </service>
     </application>
-    <permission
-        android:name="com.eebbk.bfc.permission.BBK_UPLOAD_WITHOUT_NOTIFICATION"
-        android:permissionGroup="android.permission-group.NETWORK"
-        android:protectionLevel="normal" /> <!-- 在SDCard中创建与删除文件权限 -->
-    <permission
-        android:name="com.eebbk.bfc.permission.ACCESS_BBK_UPLOAD_MANAGER"
-        android:protectionLevel="normal" /> <!-- 在SDCard写入数据权限 -->
+
     <uses-feature android:name="android.hardware.camera" /> <!-- 访问internet权限 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 访问Camera权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -122,8 +120,4 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Allows advanced access to the Upload Manager -->
     <uses-permission android:name="android.permission.INSTALL_PACKAGES" /> <!-- custom -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="com.eebbk.bfc.permission.ACCESS_BBK_UPLOAD_MANAGER" />
-
-    <uses-permission android:name="com.eebbk.bfc.permission.BBK_UPLOAD_WITHOUT_NOTIFICATION" />
-
 </manifest>
